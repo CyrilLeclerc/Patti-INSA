@@ -1,0 +1,264 @@
+/**
+ * RESET CSS
+ * IMAGES
+ * COLOR
+ * POLICE
+ * INTERACTIONS
+ * OTHERS
+ */
+:root{
+    --primary: #FE7E17;
+    --white: #FFFFFF;
+    --gutter: 0.938rem; /*15px*/
+    --gutter-1: 0.875rem;/*14px*/
+    --gutter-2: 1.25rem;/*20px*/
+    --gutter-3: 2.188rem;/*35px*/
+}
+
+/*------------------------------------*\
+  Reset CSS
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*------------------------------------*\
+  IMAGES
+\*------------------------------------*/
+#services,#hello,.section-twitter,.section-quote{
+    background-size: cover;
+}
+
+#hello{
+    background-image: url(../Images/classroom.jpg);
+    height: 31rem;
+}
+#services{
+    background-image: url(../Images/services.jpg);
+}
+
+.section-twitter{
+    background-image: url(../Images/bord-mer.jpg);
+}
+
+.section-quote{
+    background-image: url(../Images/quai-mer.jpg);
+}
+
+#contact{
+    background-image: url(../Images/bureau.jpg);
+}
+
+img{
+    max-width: 100%;
+}
+
+/*------------------------------------*\
+  COLOR
+\*------------------------------------*/
+.contact__icon{
+    background-color: var(--white);
+}
+
+.section-partners,.box__hover:hover{
+    background-color: var(--primary);
+}
+
+.section-blog__color,.section-quote,.twitter__heading-2,.section__twitter-date,.section-twitter__tweet,.section-twitter__item2,.box__hover:hover,.map__title,.contact__title,.contact-info__item,.contact-info__link:hover,.contact__title2,.slider__title,.slider__info,.slider__caption{
+    color: var(--white);
+}
+
+.section-twitter__item,.testimonials__author,.main-menu__item:active,.card-team__social:hover,.blog__read-more,.blog__link:hover,.extra-menu__item:hover,.footer-socialmedia__item:hover,.contact-info__link{
+    color: var(--primary);
+}
+
+h1,.team-text,.card-team__name,.services__text,.about__heading2,.about__heading2bis,.card-team__role,.facts__number,.blog__link, a,.testimonials__function,.quote-einstein__link{
+    color: #323232;
+}
+
+.section-blog__quote,.section-map__background{
+    background-color: #323232;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.about__text,.blog__read-more:hover,.footer__legal,.card-team__social,.card-team__details,.footer__legal,.footer-socialmedia__item,.menu-work__item,.blog__date,.blog__text,.testimonials__text,.testimonials__function{
+    color: #686868;
+}
+
+.card-team__figure,.article-work__item{
+    filter: grayscale(100%);
+}
+
+.line{
+    width: 10%;
+    height: 0.02rem;
+    background-color:#fe7f17;
+  }
+
+.card-team__figure:hover,.article-work__item:hover{
+    filter: grayscale(30%);
+}
+
+.article-work__item:hover{
+    filter: sepia(50%);
+}
+
+
+/*------------------------------------*\
+  POLICE
+\*------------------------------------*/
+.facts__number,.slider__title{
+    font-size: 3.5rem;
+}
+
+h1,.twitter__heading-2{
+    font-size: 2.25rem;
+}
+
+.quote__text{
+    font-size: 1.875rem;
+}
+
+.about__heading2{
+    font-size: 1.5rem;
+}
+
+.blog__link,.map__title{
+    font-size: 1.25rem;
+}
+
+.testimonials__text,.contact__title2{
+    font-size: 1.125rem;
+}
+
+p,.quote__author,.contact-info__item,.contact-info__link{
+    font-size: 0.938rem;
+}
+
+.about-heading2bis,.blog__read-more,.testimonials__author{
+    font-size: 0.875rem;
+}
+
+h1,p,.team-text,.card-team__role,.quote__text,.menu-work__item,.map__title,.contact-info__item,.contact-info__link,.contact__title2,.twitter__heading-2{
+    font-weight: 300;
+}
+
+.main-menu__item,.about__heading2,.about__heading2bis,.card-team__name,.facts__number,.service__heading2,.blog__link,.blog__read-more,.quote__author,.testimonials__author{
+    font-weight: 800;
+}
+
+h1,.about__heading2,about__heading2bis,.card-team__name,.quote__author,.extra-menu__item,.twitter__heading-2,.main-menu__item{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-menu__item:hover{
+    text-decoration: underline;
+}
+
+/*------------------------------------*\
+  INTERACTIONS
+\*------------------------------------*/
+.box__hover:hover,.menu-work__item:hover,.card-team__figure:hover,.article-work__item:hover,.extra-menu__item:hover,.blog__image:hover,.footer-socialmedia__item:hover,.contact-info__link:hover{
+    transition: 0.5s;
+}
+
+.box__hover,.menu-work__item,.card-team__figure,.article-work__item,.extra-menu__item,.blog__image,.footer-socialmedia__item,.contact-info__link{
+    transition: ease-out 0.5s;
+}
+
+.blog__image:hover{
+    filter: brightness(50%);
+}
+
+.menu-work__item{
+    border: 0.01rem solid #FFFFFF;
+}
+
+.menu-work__item:hover{
+    border: 0.01rem solid #FE7E17;
+}
+.card-team__figure:hover,.article-work__item:hover,.blog__image:hover{
+    transform: scale(1.01);
+}
+
+.footer-socialmedia__item{
+    border: solid #686868 0.01rem;
+}
+
+.slider__title{
+    border: #FFFFFF solid 0.1rem;
+}
+
+/*------------------------------------*\
+  OTHER
+\*------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
+/* Progress bar */
+progress{
+    width: 100%;
+    height: 0.625rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+progress[value]{
+    -webkit-appearance: none;
+     appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: #EFEFEF;    
+}
+progress[value]::-webkit-progress-value{
+    background-color: var(--primary);
+}
